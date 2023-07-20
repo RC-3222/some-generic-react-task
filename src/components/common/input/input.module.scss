@@ -1,0 +1,44 @@
+@use "../../../scss/mixins" as *;
+@use "../../../scss/variables" as *;
+
+.container {
+  background: $clr--white;
+  //border: 1px solid $clr--light-gray;
+  color: black;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  height: fit-content;
+
+  &:focus-within {
+    outline: 2px solid $clr--light-green;
+  }
+}
+
+.label {
+  @include font--s-small--w-regular;
+  color: $clr--dark-grey;
+  text-align: left;
+
+}
+
+.input {
+  @include font--s-normal--w-regular;
+  //color: $clr--black;
+  border: none;
+  padding: 5px 0 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+  background: transparent;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  &::placeholder {
+    color: $clr--light-gray;
+  }
+}

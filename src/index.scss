@@ -1,0 +1,26 @@
+@use "./scss/variables" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap");
+
+body {
+  background-color: $clr--dark-grey;
+  color: $clr--white;
+
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+
+  /*&::-webkit-scrollbar {
+      display: none;
+  }*/
+}
+
+*::-webkit-scrollbar {
+  background: transparent;
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(88, 88, 88, 0.8);
+  border-radius: 4px;
+}

@@ -1,0 +1,37 @@
+@use "../../../scss/mixins" as *;
+@use "../../../scss/variables" as *;
+
+.btn {
+  @include font--s-normal--w-bold;
+
+  border-radius: 8px;
+  color: $clr--white;
+  border: 1px solid;
+  cursor: pointer;
+  padding: 8px 16px;
+  vertical-align: middle;
+  white-space: nowrap;
+  transition: background-color 250ms ease-in-out, border-color 250ms;
+
+  &_primary {
+    @include button-color($clr--primary, 10%);
+  }
+
+  &_secondary {
+    @include button-color($clr--secondary, 10%);
+  }
+
+  &_danger {
+    @include button-color($clr--danger, 10%);
+  }
+
+  &_variable {
+    @include button-color($clr--light-green, 10%);
+    color: $clr--black;
+  }
+
+  &_light {
+    @include button-color($clr--light-gray, 10%);
+    color: $clr--black;
+  }
+}

@@ -1,0 +1,36 @@
+@use "../../../scss/mixins" as *;
+@use "../../../scss/variables" as *;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  &:focus-within {
+    padding: 0 2px;
+
+
+  }
+
+  &:first-child {
+    padding-top: 2px;
+  }
+}
+
+.textarea {
+  @include font--s-normal--w-regular;
+
+  width: 100%;
+  margin-left: auto;
+  resize: none;
+  padding: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid $clr--light-gray;
+
+  &:focus {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

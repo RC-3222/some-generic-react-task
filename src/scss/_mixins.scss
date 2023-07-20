@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+@mixin font($size, $weight) {
+  font-family: $font-family--default;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin font--h1 {
+  @include font(1.5rem, 600);
+}
+
+@mixin font--h2 {
+  @include font(1.25rem, 600);
+}
+
+@mixin font--s-normal--w-regular {
+  @include font(1rem, 400);
+}
+
+@mixin font--s-normal--w-bold {
+  @include font(1rem, 500);
+}
+
+@mixin font--s-small--w-regular {
+  @include font(0.875rem, 400);
+}
+
+@mixin button-color($color, $darken-amount) {
+  background-color: $color;
+  border-color: $color;
+
+  &:hover, &:active {
+    background-color: darken($color, $darken-amount);
+    border-color: darken($color, $darken-amount);
+  }
+}
