@@ -1,7 +1,3 @@
-# some-generic-react-task
+# Message Template Editor
 
-If you got here by link, you probably already know what it is and what are the requirments, so go ahead and check.
-
-All the needed info can be found in those requirments and in the comments (and docstrings) around the project.
-
-Deployment: https://rc-3222.github.io/msg-tmp-ed-depl/
+Deployed at: https://rc-3222.github.io/msg-tmp-ed-depl/
